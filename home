@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <style>
+        img{
+            height: 300px;
+            object-fit: contain;
+        }
+        #carouselExampleDark,#carouselExampleCaptions,.carousel-item{
+            width: 100%;
+            height:300px; 
+            object-fit: contain;
+            
+            
+        }
+        h1{
+            padding: 20px;
+        }
+
+
+
+        @media screen and (max-width: 450px){
+        #carouselExampleDark,#carouselExampleCaptions{
+            width: 100%; 
+            padding: 20px;   
+        }
+        .frame{
+          display: none;
+        }
+      
+}
+
+
+
+</style>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+
+
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <!-- <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div> -->
+    </header>
+
+
+                            <!-- Crosuel -->
+
+
+
+
+<div class="inline">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/9a5ab000-41ed-4f8d-a93f-a354dd4e6cff.__CR0,0,970,600_PT0_SX970_V1___.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/71kOE25q8pL._SX679_.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/61Q6E7laZjL._SY879_.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+
+<br><br>
+
+                                                                                   
+
+
+
+
+
+
+
+
+<!-- 
+<div class="inline">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="  https://m.media-amazon.com/images/I/61L9JS4iEzL.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/617qAMINcHL.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61uCN3FyJoL.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div> -->
+
+<div class="container-xxl bd-gutter pt-md-1 pb-md-4">
+
+      <!-- <div class="col-xl-8"> -->
+        <h1 class="bd-title mt-0" style="padding:0 ;">Buy now from the below links</h1>
+        <p class="bd-lead">We provide links of the best e commerce platforms of India</p>
+
+        <div class="d-flex flex-column flex-md-row gap-3" style="margin:0 ;">
+          <h5>
+          Buy from Amazon </h5>
+          <a href="https://www.youtube.com/results?search_query=khamosiya+song+without+music" class="btn btn-lg bd-btn-lg btn-outline-danger" style="width: 100%" >
+           BUY NOW
+          </a>
+        </div>
+        </div>
+      </div>
+<div class="container-xxl bd-gutter pt-md-1 pb-md-4">
+
+      <!-- <div class="col-xl-8"> -->
+        <p class="bd-lead">.</p>
+
+        <!-- <div class="d-flex flex-column flex-md-row gap-3" style="margin:0 ;">
+          <h5>
+          Buy from Flipkart </h5>
+          <a href="https://www.youtube.com/results?search_query=khamosiya+song+without+music" class="btn btn-lg bd-btn-lg btn-outline-primary" style="width: 100%" >
+           BUY NOW
+          </a>
+        </div>
+        </div>
+      </div> -->
+
+   
+<br>
+<main class="container py-5">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B09R3JQ3P9&asins=B09R3JQ3P9&linkId=49c556337d3a8dcdc9ee1cf2cd6fff4d&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B0B59SXKVS&asins=B0B59SXKVS&linkId=bfecd1f2d4cfef4c2d02b78fbc530385&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B07C87RXGZ&asins=B07C87RXGZ&linkId=0c6947170dad0e3b88586aa213e062df&show_border=true&link_opens_in_new_window=true"></iframe>
+<div class="frame">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B08378VSP6&asins=B08378VSP6&linkId=abb8a0c0ef6025f05222d35e0fae0006&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B00IYD419Q&asins=B00IYD419Q&linkId=d3d610be952db62a59b46a19f53c6c56&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B07NGB6CHZ&asins=B07NGB6CHZ&linkId=d357b19a3b44b89ee6605ba9f4caccf3&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B08378RNDK&asins=B08378RNDK&linkId=cedbf4e7758b170ed1074763ea348bd2&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B0B59RJM6C&asins=B0B59RJM6C&linkId=800d76e424fdc735d7130327efe8408b&show_border=true&link_opens_in_new_window=true"></iframe>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=juriahmed1501-21&language=en_IN&marketplace=amazon&region=IN&placement=B07MZZDY6T&asins=B07MZZDY6T&linkId=b167557d395ec0f64586f79be7815a66&show_border=true&link_opens_in_new_window=true"></iframe>
+</div>
+
+</main>
+
+
+
+
+
+<main class="container py-5">
+  <h2>Data about he product</h2>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        General information of the product
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div style="color:red
+         ;">
+        <p style="color: red;">Brand :	Bajaj</p>
+        <p>Colour	: White</p>
+        <p>Item Dimensions (LxWxH) :	45.5 x 43.5 x 82 Centimeters</p>
+        <p>Material	Plastic, Acrylonitrile Butadiene Styrene</p>
+        Form Factor	Personal
+        Included Components	Cooler, Caster wheels, Warranty card, Instruction manual
+        Item Weight	8700 Grams
+        Number of Speeds	3
+        Reservoir Capacity</div></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Features of the product
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>1. 36-Litre Water Tank </p>
+      <p> 2. Anti-bacterial Honeycomb pads<p>
+      <p> 3. Turbo Fan technology with 30-feet Air throw<p></p>
+          <p>4. Superior Air Delivery of 1500 CMH (avg)</p>
+           <p>5. Warranty - 1 year</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Best and worst comments on the product on online websites like Amazon,Flipkart etc
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <p style="color:red ;">One of the comment in amazon that says most of the thing</p>
+      
+      <p>
+      Pros
+      -Good Cooling but not better then symphony cooler (at same price).
+      -Good for Normal size room.
+      -Water Capacity is good.Once filled the water ,it lasts for complete one day (If u are running for 24hr)
+      -Value for money
+      -Less sound then other similar products
+    </p>
+  <p>
+      Cons
+      -Cooling speed remains almost same for 1,2&3 level of speed.
+      -At Same price Symphony cooler cools better , although it enough for normal room cooling
+    </p>
+  <p>   
+      Final Verdict:
+      Go for it if you are planning for normal cooling better water capacity,At same price Symphony cooler cools better but you need to fill the cooler 4 times in day .
+    </p>
+
+    <p><code>Note- This is comment has been copied from the official website of amazon. We have not add any additional information to it and it is totally unbiased</code></p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Best and worst comments on youtube of the product 
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><code>Currently unavaliable</code></div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+
+
+
+
+                                                                                        <!-- Slideshow -->
+
+
+          <style>
+          
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            img {
+              vertical-align: middle;
+            }
+            
+            /* Position the image container (needed to position the left and right arrows) */
+            .container {
+              position: relative;
+            }
+            
+            /* Hide the images by default */
+            .mySlides {
+              display: none;
+            }
+            
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+              cursor: pointer;
+            }
+            
+            /* Next & previous buttons */
+            .prev,
+            .next {
+              cursor: pointer;
+              position: absolute;
+              top: 40%;
+              width: auto;
+              padding: 16px;
+              margin-top: -50px;
+              color: white;
+              font-weight: bold;
+              font-size: 20px;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+              -webkit-user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            /* Container for image text */
+            .caption-container {
+              text-align: center;
+              background-color: #222;
+              padding: 2px 16px;
+              color: white;
+            }
+            
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Six columns side by side */
+            .column {
+              float: left;
+              width: 16.66%;
+            }
+            
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+              opacity: 0.6;
+            }
+            
+            .active,
+            .demo:hover {
+              opacity: 1;
+            }
+            </style>
+
+
+
+<main class="container py-5">
+<h2 style="text-align:center">Gallery of the product</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+    <img src="https://m.media-amazon.com/images/I/71-aYPKOdoL.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71-aYPKOdoL.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+    <img src="https://m.media-amazon.com/images/I/51iO1pM+GXL._SL1600_.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+    <img src="https://m.media-amazon.com/images/I/61FGHVdBicL._SL1600_.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://m.media-amazon.com/images/I/61jgKB2fCgL._SL1600_.jpg"width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+    <img src="https://m.media-amazon.com/images/I/71qN8HPaW7L._SL1600_.jpg"width:100%">
+  </div>
+      <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71JmQjVJR9L.jpg" style="width:100%">
+  </div>
+
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://m.media-amazon.com/images/I/71-aYPKOdoL.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://images-na.ssl-images-amazon.com/images/I/71-aYPKOdoL.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://m.media-amazon.com/images/I/51iO1pM+GXL._SL1600_.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://m.media-amazon.com/images/I/61FGHVdBicL._SL1600_.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://m.media-amazon.com/images/I/61jgKB2fCgL._SL1600_.jpg" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://m.media-amazon.com/images/I/71qN8HPaW7L._SL1600_.jpg" style= "width:100%" onclick="currentSlide(6)" >
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="https://images-na.ssl-images-amazon.com/images/I/71JmQjVJR9L.jpg" style="width:100%" onclick="currentSlide(7)" >
+    </div>
+  </div>
+</div>
+</main>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <main class="container py-5">
+    <h1>Top compititiors </h1>
+ 
+    <hr class="my-5">
+  
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1855px;">
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+        <div class="card">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 362px;">
+        <div class="card bg-danger text-white text-center  p-3">
+          <figure class=" mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockq9875uote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 533px;">
+        <div class="card">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 911px;">
+        <div class="card bg-primary text-white text-center p-3">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a bloghghkhjhckquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1050px;">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and s5565656hort paragraph of text below it.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  
+  </main> -->
+  
+<!-- Card -->
+<main class="container py-5">
+<h2>Other similar categories</h2>
+  <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around" style="display:inline-block ;">
+    <div class="card" >
+      <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQcmrXJy8NiZnwe2qfBEg44NS96_1cvgwcjQ&usqp=CAU" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" ></rect></svg> -->
+      <img src="https://m.media-amazon.com/images/S/aplus-media/sota/b0a81d3f-6d10-4a0b-9273-89d42722300d.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="" style="object-fit:fit ;">
+    
+      <div class="card-body">
+        <h5 class="card-title">Air conditioners</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Shop now</a>
+      </div>
+    </div>
+    </div>
+  <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around">
+    <div class="card">
+      <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQcmrXJy8NiZnwe2qfBEg44NS96_1cvgwcjQ&usqp=CAU" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" ></rect></svg> -->
+      <img src="https://d4donline.com/blog/content/images/2022/02/table-fan-buying-guide.jpg" alt="">
+    
+      <div class="card-body">
+        <h5 class="card-title">Table fans</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Shop now</a>
+      </div>
+    </div>
+    </div>
+  <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around">
+    <div class="card">
+      <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQcmrXJy8NiZnwe2qfBEg44NS96_1cvgwcjQ&usqp=CAU" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" ></rect></svg> -->
+      <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier-3H/replace_03.jpg" alt="">
+    
+      <div class="card-body">
+        <h5 class="card-title">Air purifiers</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Shop now</a>
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <!-- <section class="container pt-5">  -->
+
+        <!-- Heading-->
+
+        <!-- <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+          <h2 class="h3 mb-0 pt-3 me-2">Trending products</h2>
+          <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href="shop-grid-ls.html">More products<i class="ci-arrow-right ms-1 me-n1"></i></a></div>
+        </div> -->
+
+        <!-- Grid-->
+
+        <!-- <div class="row pt-2 mx-n2"> -->
+
+          <!-- Product 1-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button">Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="" data-bs-toggle="modal">Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product 2-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button">Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="" data-bs-toggle="modal">Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product 3-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button">Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="" data-bs-toggle="modal">Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product 4-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button">Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="" data-bs-toggle="modal">Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button">Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="" data-bs-toggle="modal">Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Headphones</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button">Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="" data-bs-toggle="modal">Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Wearable Electronics</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Smart Watch Series 5, Aluminium</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$349.<small>99</small></span></div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view-electro" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> -->
+          <!-- Product-->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/390/31688/722561e6b86eafb7fc5017da6c3e18791453fc29df5b6f08ad40d15917e89937__48434.1654725527.png?c=2" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Computers</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Convertible 2-in-1 HD Laptop</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$412.<small>00</small></span></div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view-electro" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+              <!-- <div class="col-md-8">
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-2">
+                  <h2 class="h4 mb-3">Latest videos from Cartzilla channel</h2><a class="btn btn-outline-accent btn-sm mb-3" href="#">More videos<i class="ci-arrow-right fs-xs ms-1 me-n1"></i></a>
+                </div>
+                <div class="row g-0">
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/vS93u75NnPo" data-bs-toggle="video" lg-uid="lg0">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:16</span><img class="w-100" src="img/home/video/cover01.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">5 New Cool Gadgets You Must See on Cartzilla - Cheap Budget</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/B6LaYgGogf0" data-bs-toggle="video" lg-uid="lg1">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">7:27</span><img class="w-100" src="img/home/video/cover02.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">5 Super Useful Gadgets on Cartzilla You Must Have in 2020</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/kB-ROfRS9V4" data-bs-toggle="video" lg-uid="lg2">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:20</span><img class="w-100" src="img/home/video/cover03.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">Top 5 New Amazing Gadgets on Cartzilla You Must See</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3 d-lg-none"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/sJK67XXE_Rg" data-bs-toggle="video" lg-uid="lg3">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:11</span><img class="w-100" src="img/home/video/cover04.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm fw-bold pt-1">5 Amazing Construction Inventions and Working Tools Available...</h6></a></div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
+          <div  style="background-color: rgb(58, 175, 210); left: 0%;">
+            <div class="d-lg-flex justify-content-between align-items-center ps-lg-4"><img class="d-block order-lg-2 me-lg-n5 flex-shrink-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aRr3WORNB6OHfs56Jq80dP4sJpQHsImqeg&usqp=CAU" alt="Summer Collection">
+              <div class="position-relative mx-auto me-lg-n5 py-5 px-4 mb-lg-5 order-lg-1" style="max-width: 42rem; z-index: 10;">
+                <div class="pb-lg-5 mb-lg-5 text-center text-lg-start text-lg-nowrap">
+                  <h3 class="h2 text-light fw-light pb-1 from-start">Has just arrived!</h3>
+                  <h2 class="text-light display-5 from-start delay-1">Huge Summer Collection</h2>
+                  <p class="fs-lg text-light pb-3 from-start delay-2">Swimwear, Tops, Shorts, Sunglasses &amp; much more...</p>
+                  <div class="d-table scale-up delay-4 mx-auto mx-lg-0"><a class="btn btn-primary" href="shop-grid-ls.html">Shop Now<i class="ci-arrow-right ms-2 me-n1"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+     
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
