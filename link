@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 style="text-align:center ;">Smartbuy.com</h1>
+    <style>
+        img{
+            height: 300px;
+            object-fit: contain;
+        }
+        #carouselExampleDark,#carouselExampleCaptions,.carousel-item{
+            width: 100%;
+            height:300px; 
+            object-fit: contain;
+            
+            
+        }
+        h1{
+            padding: 20px;
+        }
+
+
+
+        @media screen and (max-width: 450px){
+        #carouselExampleDark,#carouselExampleCaptions{
+            width: 100%; 
+            padding: 20px;   
+        }
+        .frame{
+          display: none;
+        }
+      
+}
+
+</style>
+
+<!-- Style for image slideshow that has been extraced from w3schools  -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+
+
+<!-- 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul> -->
+
+      <!-- <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div> -->
+    </header>
+
+
+                            <!-- Crosuel -->
+
+
+
+
+<div class="inline">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://images.unsplash.com/photo-1585180753283-c3ecb2d15106?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vYmlsZSUyMGdhbWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img  src="https://images.unsplash.com/photo-1609177336742-c47dd764ad74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1vYmlsZSUyMGdhbWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1638398827627-284082155e09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1vYmlsZSUyMGdhbWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+
+
+
+<!-- Alert boxes -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>                                                                                  
+<main class="container py-5" id="top_of_page">
+<div class="alert alert-success d-flex align-items-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+  <div>
+    Kindly note that we have done a lot of research in searching the best phones for you. Our priority decreases as we go down the group. You donot have to do a lot of research. Just click on buy now to buy. We have also a <a href="#disclaimer">disclaimer</a> for you. 
+  </div>
+</main>
+
+
+
+
+
+<!-- 
+<div class="inline">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="  https://m.media-amazon.com/images/I/61L9JS4iEzL.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/617qAMINcHL.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61uCN3FyJoL.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div> -->
+
+<!-- <div class="container-xxl bd-gutter pt-md-1 pb-md-4">
+
+      <-- <div class="col-xl-8"> 
+        <h1 class="blog-post-title mb-1" style="padding:0 ;">Bajaj PX 97 TORQUE (HC) 36L </h1>
+        <p class="bd-lead">We provide links of the best e commerce platforms of India</p>
+
+        <div class="d-flex flex-column flex-md-row gap-3" style="margin:0 ;">
+          <h5>
+          Buy from Amazon </h5>
+          <a href="https://www.youtube.com/results?search_query=khamosiya+song+without+music" class="btn btn-lg bd-btn-lg btn-outline-danger" style="width: 100%" >
+           BUY NOW
+          </a>
+        </div>
+        </div>
+      </div> -->
+
+<!-- <div class="container-xxl bd-gutter pt-md-1 pb-md-4">
+ 
+      <div class="col-xl-8"> 
+        <p class="bd-lead">.</p>
+
+         <div class="d-flex flex-column flex-md-row gap-3" style="margin:0 ;">
+          <h5>
+          Buy from Flipkart </h5>
+          <a href="https://www.youtube.com/results?search_query=khamosiya+song+without+music" class="btn btn-lg bd-btn-lg btn-outline-primary" style="width: 100%" >
+           BUY NOW
+          </a>
+        </div>
+        </div>
+      </div> -->
+
+   
+
+
+
+
+<!-- 
+<main class="container py-5">
+  <h2>Data about he product</h2>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        General information of the product
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div style="color:blue
+         ;">
+        <p style="color: red;">Brand :	Bajaj</p>
+        <p>Colour	: White</p>
+        <p>Item Dimensions (LxWxH) :	45.5 x 43.5 x 82 Centimeters</p>
+        <p>Material	Plastic, Acrylonitrile Butadiene Styrene</p>
+        <p> Form Factor :-	Personal</p>
+        <p> Components :-	Cooler, Caster wheels, Warranty card, Instruction manual </p>
+        <p>Item Weight:-	8700 Grams</p>
+        <p>Number of Speeds	3</p>
+        <p>Reservoir Capacity</p></div></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Features of the product
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>1. 36-Litre Water Tank </p>
+      <p> 2. Anti-bacterial Honeycomb pads<p>
+      <p> 3. Turbo Fan technology with 30-feet Air throw<p></p>
+          <p>4. Superior Air Delivery of 1500 CMH (avg)</p>
+           <p>5. Warranty - 1 year</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Best and worst comments on the product on online websites like Amazon,Flipkart etc
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <p style="color:red ;">One of the comment in amazon that says most of the thing</p>
+      
+      <p>
+      Pros
+      -Good Cooling but not better then symphony cooler (at same price).
+      -Good for Normal size room.
+      -Water Capacity is good.Once filled the water ,it lasts for complete one day (If u are running for 24hr)
+      -Value for money
+      -Less sound then other similar products
+    </p>
+  <p>
+      Cons
+      -Cooling speed remains almost same for 1,2&3 level of speed.
+      -At Same price Symphony cooler cools better , although it enough for normal room cooling
+    </p>
+  <p>   
+      Final Verdict:
+      Go for it if you are planning for normal cooling better water capacity,At same price Symphony cooler cools better but you need to fill the cooler 4 times in day .
+    </p>
+
+    <p><code>Note- This is comment has been copied from the official website of amazon. We have not add any additional information to it and it is totally unbiased</code></p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Best and worst comments on youtube of the product 
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><code>Currently unavaliable</code></div>
+    </div>
+  </div>
+</div>
+
+</main>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <main class="container py-5">
+    <h1>Top compititiors </h1>
+ 
+    <hr class="my-5">
+  
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1855px;">
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+        <div class="card">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 362px;">
+        <div class="card bg-danger text-white text-center  p-3">
+          <figure class=" mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockq9875uote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 533px;">
+        <div class="card">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 911px;">
+        <div class="card bg-primary text-white text-center p-3">
+          <figure class="mb-0">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a bloghghkhjhckquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer mb-0 text-white">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1050px;">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and s5565656hort paragraph of text below it.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  
+  </main> -->
+  
+
+
+     <section class="container pt-5"> 
+
+        <!-- Heading-->
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+          <h2 class="h3 mb-0 pt-3 me-2">Smartphones under Rs 15000</h2>
+          <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href="shop-grid-ls.html"><i class="ci-arrow-right ms-1 me-n1"></i></a></div>
+        </div> 
+        <!-- Grid-->
+
+      <div class="row pt-2 mx-n2">
+
+          <!-- Product 1 -- Redmi note 10s -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/81B0HJigO-L._SX522_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration:none ;">6 GB RAM, 64 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3cIPHzj" style="color:rgb(255, 94, 19) ;">Redmi Note 10S</a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3cIPHzj" style="color:white ;text-decoration: none;"> Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                     Will be updated soon.............................................................................<br>Alternatively you can see the specifications on clicking buy now option
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Product 2 -- Oppo A74 5g -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/71geVdy6-OS._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3vsHOEJ" style="color:rgb(255, 94, 19) ;">Oppo A74 5G</a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3vsHOEJ" style="color:white ;text-decoration: none;"> Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                     Will be updated soon.............................................................................<br>Alternatively you can see the specifications on clicking buy now option
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+          
+          <!-- Product 3 -- MOTOROLA G40 Fusion -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/313sxf4Q6mL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 64 GB Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3Jg3yJV" style="color:rgb(255, 94, 19) ;">MOTOROLA G40 F </a></h3>
+                <div class="d-flex justify-content-between">
+                  
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3Jg3yJV" style="color:white ; text-decoration:none  ">Buy now</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div  class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="text-align:left ;">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo volupt
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> 
+          <!-- Product 4 -- Redmi Note 10T 5g-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81oFpnDM2EL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 GB RAM,64 GB Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cQD6ub" style="color:rgb(255, 94, 19) ;">Redmi Note 10T 5G</a></h3>
+                <div class="d-flex justify-content-between">
+                
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3cQD6ub" style="text-decoration:none ; color:white ">   Buy now       </a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div  class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="text-align:left ;">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> 
+          <!-- Product 5 -- Realme Narzo 50-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img src="https://m.media-amazon.com/images/I/81X85GWtYHL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 GB RAM,64 Gb storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3beF2vU" style="color:rgb(255, 94, 19) ;">Realme Narzo 50</a></h3>
+                <div class="d-flex justify-content-between">
+          
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"> <a href="https://amzn.to/3beF2vU" style="text-decoration:none ; color:white"> Buy now </a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div>
+
+          <!-- Product 6 -- Redmi note 11 -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81zLNgcvlaL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 Gb RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3OOfeVc" style="color:rgb(255, 94, 19) ;">Redmi Note 11 </a></h3>
+                <div class="d-flex justify-content-between">
+                 
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;">  <a href="https://amzn.to/3OOfeVc" style="text-decoration: none ;color:white ;">  Buy now </a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> 
+          
+          <!-- Product 7-- Realme 9i-->
+         <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/51u9-q9539L._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 Gb RAM, 128 Gb Storage </a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cWOa9e" style="color:rgb(255, 94, 19) ;">Realme 9i</a></h3>
+                <div class="d-flex justify-content-between">
+              
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"> <a href="https://amzn.to/3cWOa9e" style="text-decoration:none ; color: white;"> Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> 
+          <!-- Product 8-- Redmi 10 -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/31jOF0g5tVL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 gb RAM, 64GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3Q1PJkj" style="color:rgb(255, 94, 19) ;">Redmi 10</a></h3>
+                <div class="d-flex justify-content-between">
+            
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3Q1PJkj" style="text-decoration: none; color:white">  Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <hr class="d-sm-none">
+          </div> 
+          <!-- Product 9-- Oppo F19-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/71crCF+ogwL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none;">6 GB RAM, 128 GB storage </a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cMbPsK" style="color:rgb(243, 87, 14) ;">OPPO F19</a></h3>
+                <div class="d-flex justify-content-between">
+               
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3cMbPsK" style="text-decoration: none; color:white">Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 10 --Narzo 50 A -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81Ke5qtC6oL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 GB RAM, 128 GB Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3JuIe3v" style="color:rgb(243, 87, 14) ;">Narzo 50 A</a></h3>
+                <div class="d-flex justify-content-between">
+
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3JuIe3v" style="text-decoration: none; color:white">Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product-11-Samsung F22 10-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/21J+fC0z+KL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3SdCEGA" style="color:rgb(243, 87, 14) ;">Samsung Galaxy F22</a></h3>
+                <div class="d-flex justify-content-between">
+     
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3SdCEGA" style="text-decoration:none ;color:white"> Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product--12-- Realme C21y-- 11-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/31CGdciadvL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 Gb RAM, 64 Gb Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3oGuqsO" style="color:rgb(243, 87, 14) ;">Realme C21Y</a></h3>
+                <div class="d-flex justify-content-between">
+               
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3oGuqsO" style="text-decoration: none ; color:white">Buy now  </a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product --Samsung M32--13-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/71F4jU7MRUS._SX522_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 GB RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cOPcUv" style="color:rgb(243, 87, 14) ;">Samsung Galaxy M32</a></h3>
+                <div class="d-flex justify-content-between">
+
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3cOPcUv" style="text-decoration: none; color:white">Buy now</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>   <hr class="d-sm-none">
+          </div>
+          <!-- Product --Samsung M21--14-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img src="https://m.media-amazon.com/images/I/811lrGbXwIL._SY679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration: none ;">4 GB RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cTD70b" style="color:rgb(243, 87, 14) ;">Samsung Galaxy M21</a></h3>
+                <div class="d-flex justify-content-between">
+
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3cTD70b" style="text-decoration: none; color:white">Buy now</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product -15-Samsung--M12-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://images-eu.ssl-images-amazon.com/images/I/416npwZlh7L._SX300_SY300_QL70_FMwebp_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration: none ;">4 GB RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3bn8Nux" style="color:rgb(243, 87, 14) ;">Samsung Galaxy M12</a></h3>
+                <div class="d-flex justify-content-between">
+
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3bn8Nux" style="text-decoration: none; color:white">Buy now</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product -16-Oppo A31-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/71KCwNV6MuL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration: none ;">6 GB RAM, 128 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3zJ1uH3" style="color:rgb(243, 87, 14) ;">Oppo A31</a></h3>
+                <div class="d-flex justify-content-between">
+
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3zJ1uH3" style="text-decoration: none; color:white">Buy now</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+   
+  
+   
+     
+
+
+        <section class="container pt-5"> 
+
+          <!-- Heading-->
+  
+          <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+            <h2 class="h3 mb-0 pt-3 me-2">Smartphones under Rs 16000</h2>
+            <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href="shop-grid-ls.html"><i class="ci-arrow-right ms-1 me-n1"></i></a></div>
+          </div> 
+          <!-- Grid-->
+  
+        <div class="row pt-2 mx-n2">
+  
+          <!-- Product 1 -- Redmi note 10 pro -->
+          <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img style="align-content: center;" src="https://m.media-amazon.com/images/I/81S-XYJlzTL._SY679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3zIqMoN" style="color:rgb(255, 94, 19) ;">Redmi Note 10 pro</a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3zIqMoN" style="color:white ;text-decoration: none;"> Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                     Will be updated soon.............................................................................<br>Alternatively you can see the specifications on clicking buy now option
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+          <!-- Product 2 -- Realme Narzo 30 5G -->
+          <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/719tm7l723L._SY679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a style="color: rgb(255, 94, 19);" href="https://amzn.to/3zIqMoN">Realme Narzo 30 5G </a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3zIqMoN" style="color:white ;text-decoration: none;"> Buy now</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                     Will be updated soon.............................................................................<br>Alternatively you can see the specifications on clicking buy now option
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+          </div>
+
+
+
+
+<!-- Card -->
+
+
+<!-- <main class="container py-5">
+  <h2>Other similar categories</h2>
+    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around" style="display:inline-block ;">
+      <div class="card" >
+ 
+        <img src="https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="object-fit:fit ;">
+      
+        <div class="card-body">
+          <h5 class="card-title">Smart Phones for officials</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger">Shop now</a>
+        </div>
+      </div>
+      </div>
+    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around">
+      <div class="card">
+     
+        <img src="https://d4donline.com/blog/content/images/2022/02/table-fan-buying-guide.jpg" alt="">
+      
+        <div class="card-body">
+          <h5 class="card-title">Table fans</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Shop now</a>
+        </div>
+      </div>
+      </div>
+    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around">
+      <div class="card">
+    
+        <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier-3H/replace_03.jpg" alt="">
+      
+        <div class="card-body">
+          <h5 class="card-title">Air purifiers</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Shop now</a>
+        </div>
+      </div>
+      </div>
+    </main> -->
+  
+
+
+
+
+
+
+
+<!-- 
+              <div class="col-md-8">
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-2">
+                  <h2 class="h4 mb-3">Latest videos from Cartzilla channel</h2><a class="btn btn-outline-accent btn-sm mb-3" href="#">More videos<i class="ci-arrow-right fs-xs ms-1 me-n1"></i></a>
+                </div>
+                <div class="row g-0">
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/vS93u75NnPo" data-bs-toggle="video" lg-uid="lg0">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:16</span><img class="w-100" src="img/home/video/cover01.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">5 New Cool Gadgets You Must See on Cartzilla - Cheap Budget</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/B6LaYgGogf0" data-bs-toggle="video" lg-uid="lg1">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">7:27</span><img class="w-100" src="img/home/video/cover02.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">5 Super Useful Gadgets on Cartzilla You Must Have in 2020</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/kB-ROfRS9V4" data-bs-toggle="video" lg-uid="lg2">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:20</span><img class="w-100" src="img/home/video/cover03.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">Top 5 New Amazing Gadgets on Cartzilla You Must See</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3 d-lg-none"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/sJK67XXE_Rg" data-bs-toggle="video" lg-uid="lg3">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:11</span><img class="w-100" src="img/home/video/cover04.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm fw-bold pt-1">5 Amazing Construction Inventions and Working Tools Available...</h6></a></div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+
+
+
+
+<!-- 
+
+          <div  style="background-color: rgb(58, 175, 210); left: 0%;">
+            <div class="d-lg-flex justify-content-between align-items-center ps-lg-4"><img class="d-block order-lg-2 me-lg-n5 flex-shrink-0" src="" alt="Summer Collection">
+              <div class="position-relative mx-auto me-lg-n5 py-5 px-4 mb-lg-5 order-lg-1" style="max-width: 42rem; z-index: 10;">
+                <div class="pb-lg-5 mb-lg-5 text-center text-lg-start text-lg-nowrap">
+                  <h3 class="h2 text-light fw-light pb-1 from-start">Has just arrived!</h3>
+                  <h2 class="text-light display-5 from-start delay-1">Huge Summer Collection</h2>
+                  <p class="fs-lg text-light pb-3 from-start delay-2">Air conditioners,coolers..... etc &amp; much more...</p>
+                  <div class="d-table scale-up delay-4 mx-auto mx-lg-0"><a class="btn btn-primary" href="">Shop Now<i class="ci-arrow-right ms-2 me-n1"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="container py-lg-4 mb-4">
+            <h2 class="h3 text-center pb-4">Shop by brand</h2>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/01.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/02.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/10.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/04.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/05.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/06.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilV8kp80lMTNa9BDrtH5MU2e-i8MVxCPTjQ&usqp=CAU" style="width: 150px;" alt="Brand"></a></div>
+              
+
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="data:image/jpeg;base64,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" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTVCe_ye0cjihHd2s6AHvB99unC-Ai2RvsA&usqp=CAU" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="img/shop/brands/10.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="img/shop/brands/11.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="img/shop/brands/12.png" style="width: 150px;" alt="Brand"></a></div>
+            </div>
+          </section> -->
+
+          <main class="container py-5"><h3 style="text-align:center ;"><a href="#top_of_page">Go to the top of page</a></h3></main>
+          <main class="container py-5">
+          <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+             <a id="disclaimer">Note that we have done research according to our own way. The results might differ if you compare with another.We have arranged the phones according to the performance for gaming not anything else.Moreover there are some other phones also at this price range. We are not including them due to lack of some data.As soon we get data we will update it soon.</a> 
+            </div>
+          </div><br>
+
+
+          <img src="https://github.com/juri1501/fireblog/blob/main/bar_chart.png?raw=true" alt="" width="100%" height="600x"  ><br>
+
+          <a href="https://github.com/juri1501/fireblog/blob/main/bar_chart.png">Link for research</a>
+          </main>
+
+    
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+     
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
