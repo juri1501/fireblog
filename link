@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
-    <h1 style="text-align:center ;">Smartbuy.com</h1>
+    <h1 style="text-align:center ;">Smartbuy & Easybuy</h1>
     <style>
         img{
             height: 300px;
@@ -69,7 +69,6 @@
 
 
 
-
 <div class="inline">
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
 
@@ -80,7 +79,8 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
-            <img src="https://images.unsplash.com/photo-1585180753283-c3ecb2d15106?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vYmlsZSUyMGdhbWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+            <img src="
+            https://img.freepik.com/free-vector/gamers-using-different-devices-playing-mobile-phone-tablet-laptop-console-cartoon-illustration_74855-14380.jpg?w=1380&t=st=1659175608~exp=1659176208~hmac=a91dd9e097fd93b418d4fe9c3f7fe15f0f17a74ed2e9f4103786e4ae7b3d2bb3" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <!-- <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p> -->
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1638398827627-284082155e09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1vYmlsZSUyMGdhbWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+            <img src="https://img.freepik.com/free-photo/portrait-cute-blonde-female-using-smartphone-virtual-reality-glasses_613910-85.jpg?w=1380&t=st=1659175990~exp=1659176590~hmac=559ca9d78650adcfab5666e0dcaa92e9c87169dfaa1b38241fb812139c6cb328" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <!-- <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p> -->
@@ -132,7 +132,7 @@
 <div class="alert alert-success d-flex align-items-center" role="alert">
   <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
   <div>
-    Kindly note that we have done a lot of research in searching the best phones for you. Our priority decreases as we go down the group. You donot have to do a lot of research. Just click on buy now to buy. We have also a <a href="#disclaimer">disclaimer</a> for you.  <a href="#bar_graph">Research graph</a>
+    Kindly note that we have done a lot of research in searching the best phones for you. Our priority decreases as we go down the group. You donot have to do a lot of research. Just click on buy now to buy. We have also a <a href="#disclaimer">disclaimer</a> for you.<a href="#bar_graph">Research</a>
   </div>
 </main>
 
@@ -427,7 +427,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body" style="text-align:left ;">
-             <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/ba5d873c-81c7-4432-88ca-47b2ec7e56e7.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br><img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-10s/specs01.png" alt=""><br><img src="https://m.media-amazon.com/images/I/71f0t04-l3L._SX679_.jpg" alt="">
+             <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/ba5d873c-81c7-4432-88ca-47b2ec7e56e7.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br><img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-10s/specs01.png" alt=""><img src="https://m.media-amazon.com/images/I/71f0t04-l3L._SX679_.jpg" alt="">
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -504,11 +504,11 @@
                     <div  class="modal-dialog modal-dialog-scrollable">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel3">Modal title</h5>
+                          <h5 class="modal-title" id="staticBackdropLabel3">Specifications</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" style="text-align:left ;">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo volupt
+                          <ul>   <li><span> 4 GB RAM | 64 GB ROM  </span></li>  <li><span > 17.22 cm (6.78 inch) Full HD+ Display  </span></li>  <li><span class="a-list-item"> 64MP + 8MP + 2MP | 16MP Front Camera  </span></li>  <li><span> 6000 mAh Battery  </span></li>  <li><span > Qualcomm Snapdragon 732G Processor  </span></li>  <li><span> 120Hz Refresh Rate  </span></li>  <li><span> Stock Android Experience  </span></li>  </ul>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -526,7 +526,7 @@
             <div class="card product-card">
               <div class="product-card-actions d-flex align-items-center">
               </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81oFpnDM2EL._SX679_.jpg" alt="Product"></a>
-              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 GB RAM,64 GB Storage</a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 GB RAM, 64 GB Storage</a>
                 <h3 class="product-title fs-sm"><a href="https://amzn.to/3cQD6ub" style="color:#FF9900 ;">Redmi Note 10T 5G</a></h3>
                 <div class="d-flex justify-content-between">
                 
@@ -536,18 +536,19 @@
               </div>
               <div class="card-body card-body-hidden">
                 <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3cQD6ub" style="text-decoration:none ; color:white ">   Buy now       </a></button>
-                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
                   Quick view
                   </button><!-- Modal -->
-                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
                     <div  class="modal-dialog modal-dialog-scrollable">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                          <h5 class="modal-title" id="staticBackdropLabel4">Specifications</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" style="text-align:left ;">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                          <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/4b72cef7-585c-4058-83a0-04e691877a87.__CR0,0,1464,600_PT0_SX1464_V1___.png" alt=""><br><br>
+                          <li><span> Processor: Mediatek Dimensity 700 Octa-core; 7nm process; Up to 2.2GHz clock speed; Dual 5G support  </span></li>  <li><span > Display: 6.5 inch FHD+ 2400x1080 Dot display with 90Hz high refresh rate and adaptive sync technology; ; 180Hz touch sampling,  </span></li>  <li><span> Camera: 48 MP camera sensor, 0.8μm, f/1.79, 2MP depth and 2MP Macro camera lens 8 MP Front camera  </span></li>  <li><span > Battery: 5000 mAh battery with support for 18W fast wired charging  </span></li>  <li><span> Alexa Hands-Free capable: Download the Alexa app to use Alexa hands-free. Play music, make calls, hear news, open apps, navigate, and more, all using just your voice, while on-the-go  </span></li>  <li><span> Wireless communication technology: Cellular  </span></li>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -565,7 +566,7 @@
             <div class="card product-card">
               <div class="product-card-actions d-flex align-items-center">
               </div><a class="card-img-top d-block overflow-hidden"><img src="https://m.media-amazon.com/images/I/81X85GWtYHL._SX679_.jpg" alt="Product"></a>
-              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 GB RAM,64 Gb storage</a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 GB RAM, 64 Gb storage</a>
                 <h3 class="product-title fs-sm"><a href="https://amzn.to/3beF2vU" style="color:#FF9900 ;">Realme Narzo 50</a></h3>
                 <div class="d-flex justify-content-between">
           
@@ -582,11 +583,11 @@
                       <div  class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel">Specifications</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body" style="text-align:left ;">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt soluta incidunt, pariatur ducimus atque placeat perferendis quo voluptatibus iusto cumque nihil, recusandae alias aut perspiciatis hic sapiente ipsum non maiores sunt veritatis. Nostrum voluptate praesentium dicta officiis nisi assumenda eos sapiente, cum vitae, temporibus, sint totam. Deleniti ea numquam perspiciatis unde magni rerum quibusdam tempora asperiores facilis dolore a commodi consequuntur obcaecati harum itaque hic nostrum, ex in ducimus sint quo autem minus quod. Exercitationem voluptate eius asperiores quod explicabo eaque qui? Quibusdam mollitia harum vitae sapiente enim, beatae a neque vero, praesentium impedit velit sint, facilis rerum eaque.
+                       Will be updated soon...
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -1231,7 +1232,14 @@
           </div><br>
 
           <a href="https://github.com/juri1501/fireblog/blob/main/bar_chart.png">
-          <img id="bar_graph" src="https://github.com/juri1501/fireblog/blob/main/bar_chart.png?raw=true" alt="" width="100%" height="600x"  > </a><br>
+          <img id="bar_graph" src="https://github.com/juri1501/fireblog/blob/main/bar_chart.png?raw=true" alt="" width="100%" height="600x"  > </a><br><br><br>
+
+
+          <h6>Credit section</h6>
+          <p><a href="https://www.freepik.com/vectors/game-console">Game console vector created by pch.vector - www.freepik.com</a><br>
+          <a href="https://www.freepik.com/photos/vr-headset">Vr headset photo created by fxquadro - www.freepik.com</a>
+        
+        </p>
           </main>
 
     
